@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box; /*the padding doesn't take up the width*/
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0 200px;
+}
+.head {
+  display: inline;
+}
+.header {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.row1 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+ul {
+  display: flex;
+  text-align: center;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 10px;
+  text-align: center;
+}
+hr.new1 {
+  border-top: 1px solid rgb(232, 207, 207);
+}
+.btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 11px;
+  line-height: 11px;
+  background-color: rgb(62, 90, 124);
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+.row1 li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 10px;
+  line-height: 10px;
+  align-items: center;
+}
+li a:hover {
+  background-color: rgb(56, 12, 21);
+}
+
+.row3 li,
+.row2 p {
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.row2 img {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+.hero > div {
+  display: flex;
+  flex-direction: column;
+}
+.row2 > div {
+  width: 100%;
+}
+.row2 p {
+  text-align: start;
+  margin: 0;
+}
+.row3 {
+  align-items: center;
+  border-bottom: 4px double black;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+.column-2 h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(90, 90, 90);
+}
+.column-3 p,
+.column-1 p,
+.column-2 p {
+  font-family: nyt-imperial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(90, 90, 90);
+  font-style: italic;
+}
+
+/*main sectiom*/
+.grid-template {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(2, 100);
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2rem;
+  grid-template-areas:
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8";
+}
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box6 {
+  grid-area: box6;
+}
+.box7 {
+  grid-area: box7;
+}
+.box8 {
+  grid-area: box8;
+}
+.column-2,
+.column-1,
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.column-2 img,
+.column-3 img {
+  width: 100%;
+  height: 100%;
+}
